@@ -130,8 +130,8 @@ translateText = () => {
   }
 };
 
-userInput.addEventListener('click', () => (userInput.value = ''));
+/// Event Listener ///
+
 const translateButton = document.querySelector('.translate-button');
 translateButton.addEventListener('click', translateText);
 
-/// Event Listener ///

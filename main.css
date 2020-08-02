@@ -7,6 +7,7 @@
 }
 
 body {
+  min-height: 100%;
   background-color: whitesmoke;
 }
 
@@ -75,8 +76,9 @@ main .translator .user-input {
   height: 60%;
   width: 90%;
   background-color: transparent;
-  -webkit-transition: color ease-in-out 1s, background-color ease-in-out 1s, border-color ease-in-out 1s;
-  transition: color ease-in-out 1s, background-color ease-in-out 1s, border-color ease-in-out 1s;
+  resize: none;
+  -webkit-transition: color ease-in-out 1s, background-color ease-in-out 1s, border-color ease-in-out 1s;
+  transition: color ease-in-out 1s, background-color ease-in-out 1s, border-color ease-in-out 1s;
 }
 
 main .translator .user-input::-webkit-input-placeholder {
@@ -108,8 +110,8 @@ main .translator .user-input:focus {
   outline: none;
   background-color: #0b0014;
   color: whitesmoke;
-  -webkit-transition: background-color ease-in-out 1s, color ease-in-out 1s, border-color 1s ease-in-out;
-  transition: background-color ease-in-out 1s, color ease-in-out 1s, border-color 1s ease-in-out;
+  -webkit-transition: background-color ease-in-out 1s, color ease-in-out 1s, border-color 1s ease-in-out;
+  transition: background-color ease-in-out 1s, color ease-in-out 1s, border-color 1s ease-in-out;
   border-bottom: 2px solid whitesmoke;
   border-left: 2px solid whitesmoke;
 }
@@ -131,6 +133,8 @@ main .translator .user-input:focus::placeholder {
 }
 
 .output {
+  font-size: larger;
+  font-weight: bolder;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,6 +220,8 @@ button {
   background-color: whitesmoke;
   margin: 1%;
   padding: 0 2%;
+  outline: none;
+  border: 2px solid #0b0014;
 }
 
 button:active {
